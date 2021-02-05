@@ -9,7 +9,7 @@ app.use(express.static('public'))
 app.use(compression())
 
 app.get('/', (req, res) => {
-  res.redirect(`27`)
+  res.redirect(`/${uuidV4()}`)
 })
 
 app.get('/:room', (req, res) => {
